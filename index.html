@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asterisk Triangle Pattern</title>
+</head>
+
+<body>
+    <h1>Asterisk Triangle Pattern</h1>
+    <form onsubmit="return create()">
+        <input type="text" id="userInput" />
+        <button>Create</button>
+    </form>
+</body>
+<script>
+    // 5-----------------------------------------------------------------------------
+    function create(){
+    let userInput = document.getElementById("userInput").value;
+    for (i = 1; i <= userInput; i++) {
+        for (j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    return false;
+}
+</script>
+</html>
